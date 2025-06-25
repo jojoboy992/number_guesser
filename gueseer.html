@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="guesser.css">
+</head>
+<body>
+
+    <div class="main_div">
+
+    <h1 id="title">Can you guess the number? (Range 1-100)</h1>
+
+    <form action="" id="form">
+    <input type="text" placeholder="Enter your guess..." id="input">
+
+    <p class="trial_count">Number of trial left: <span id="number_of_trials" class="number_of_trials" style="font-weight: bold;"></span></p>
+    </form>
+    
+    <h3 id="wrong" class="wrong"></h3>
+
+    <div class="right_div" id="right_div">
+        <h2 style="color: green;">You guessed the Number!</h2>
+        <button id="button" class="button">Try again?</button>
+
+    </div>
+    <div class="trial_div" id="trial_div">
+    <h2>Number of trails have been used up!</h2>
+    <p>The number was: <span id="span" style="font-weight: bold;"></span></p>
+    <button id="button2" class="button2">Try again</button>
+    </div>
+
+    </div>
+    <script src="guesser.js"></script>
+</body>
+</html>
